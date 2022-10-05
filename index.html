@@ -10,9 +10,31 @@
   </head>
 
   <header>This is only for group member</header>
+  <h1>Meeting Minutes</h1>
+  <hr>
+
+  <h2>Please do the following</h2>
+  <ol>
+    <li>Read the web carefully</li>
+    <li>register below</li>
+    <li>Go to <a href="https://canvas.ucsd.edu">canvas</a></li>
+    <li>Have fun</li>
+  </ol>
+
+  <main>
+    <h1>Main of the Website</h1>
+    <article>
+      <h2>First Article</h2>
+      <p>First Article Content</p>
+    </article>
+
+    <article>
+      <h2>Second Article</h2>
+      <p>Second Article Content</p>
+    </article>
+  </main>
 
   <body>
-    <h1>Meeting Minutes</h1>
     <h2>Group 4 Meeting</h2>
     <h3>Meeting Date: Oct 3rd 2022</h3>
     
@@ -49,6 +71,18 @@
     </ul>
     <br> <br>
 
+    <div class="My DIV">
+      <h4>My div</h4>
+      <p>My div content</p>
+    </div>
+
+    <br><br>
+
+    <h4>Below is span practice</h4>
+    <p>Below is <span>span</span> practice content</p>
+
+    <br><br>
+
     <section>
         <h1>Key Points</h1>
         <h2>1. Why this project?</h2>
@@ -67,6 +101,14 @@
     </section>
     <br><br>
 
+    <h3>Practice for i b em strong</h3>
+    <p>This is i <i>italic</i> practice</p>
+    <p>This is b <b>bold</b> practice</p>
+    <p>This is em <em>emphasized</em> practice</p>
+    <p>This is strong <strong>strong</strong> practice</p>
+
+
+
 
     <button onclick="alert('Why click me???')">Danger! STOP</button>
     <br><br>
@@ -81,7 +123,7 @@
     </details>
 
     <br><br>
-    <form action="">
+    <form action="/success.html">
         <fieldset>
             <legend>Meeting Minutes Register</legend>
             <label for="name">Name:</label>
@@ -94,12 +136,46 @@
             <input type="tel" id="phone" name="phone"><br><br>
             <label for="birthday">Birthday:</label>
             <input type="date" id="birthday" name="birthday"><br><br>
-            <button onclick="alert('Success!!!')">Submit</button>
+            <label for="standing">Current Standing: </label>
+            <select id="standing" name="standing">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select><br><br>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="" cols="30" rows="10">comments:</textarea>
+            <br>
+            <p>click the button and you will be redirect to success page</p>
+            <button onclick="alert('Success!!! You will be redirect!!!')">Submit</button>
         </fieldset>
     </form>
 
 <br>
 
-<footer>Writen by Chi Zhang</footer>
+<h3>Nested List Practice</h3>
+<ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+              <ul>
+                <li>OneOneOne</li>
+                <li>TwoTwoTwo</li>
+                <li>ThreeThreeThree</li>
+              </ul>
+            <li>Third Item</li>
+        </ol>
+    </li>
+    <li>Fourth Item</li>
+</ul>
 
+<hr>
+
+<footer>Writen by Chi Zhang</footer>
+<h3>My Github Page: <a href="https://github.com/chizhang9135">Chi Zhang</a></h3>
+<hr>
+<br>
 </html>
