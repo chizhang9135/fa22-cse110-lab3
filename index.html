@@ -23,10 +23,6 @@
 
   <main>
     <h1>Meeting Minutes</h1>
-    <hr>
-
-
-
     <h2>Please do the following</h2>
     <ol>
       <li>Read the web carefully</li>
@@ -144,59 +140,98 @@
 
     <br><br>
 
+    <h3>Practice for table</h3>
+    <ul>
+      <li>Fruit</li>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+      </ul>
+      <li>Vegetable</li>
+      <ul>
+        <li>Carrot</li>
+        <li>Tomato</li>
+        <li>Potato</li>
+      </ul>
+    </ul>
+    
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Chi</td>
+          <td>Zhang</td>
+          <td>22</td>
+        </tr>
+      </table>
 
-    <br>
+      <br>
 
 
 
-    <form action="success.html" id="fillForm">
-      <fieldset>
-        <legend>Meeting Minutes Register</legend>
+      <form action="success.html" id="fillForm">
+        <fieldset>
+          <legend>Meeting Minutes Register</legend>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
+          <label>Gender: </label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label> &nbsp &nbsp
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label> &nbsp &nbsp
+          <input type="radio" id="others" name="gender" value="others">
+          <label for="others">Others</label>
 
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
+          <br><br>
 
-        <label for="standing">Current Standing: </label>
-        <select id="standing" name="standing">
-          <option value="freshman">Freshman</option>
-          <option value="sophomore">Sophomore</option>
-          <option value="junior">Junior</option>
-          <option value="senior">Senior</option>
-        </select><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"><br><br>
 
-        <label for="major">College in UCSD:</label>
-        <input list="College" id="major" name="major"><br><br>
-        <datalist id="College">
-          <option value="Warren"></option>
-          <option value="Sixth"></option>
-          <option value="Muir"></option>
-          <option value="Revelle"></option>
-          <option value="ERC"></option>
-          <option value="Seventh"></option>
-          <option value="Marshall"></option>
-        </datalist>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone"><br><br>
 
-        <label for="comments">Comments:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10">comments:</textarea><br><br>
-        <p>you will be redirected after submit</p>
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-    <h3><a href="#nav">Go to top</a></h3>
-    <hr>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+
+          <label for="standing">Current Standing: </label>
+          <select id="standing" name="standing">
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+          </select><br><br>
+
+          <label for="major">College in UCSD:</label>
+          <input list="College" id="major" name="major"><br><br>
+          <datalist id="College">
+            <option value="Warren"></option>
+            <option value="Sixth"></option>
+            <option value="Muir"></option>
+            <option value="Revelle"></option>
+            <option value="ERC"></option>
+            <option value="Seventh"></option>
+            <option value="Marshall"></option>
+          </datalist>
+
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" cols="30" rows="10">comments:</textarea><br><br>
+          <p>you will be redirected after submit</p>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      <h3><a href="#nav">Go to top</a></h3>
   </main>
+  <hr>
   <footer>Writen by Chi Zhang
     <h3 id="bottom">My Github Page: <a href="https://github.com/chizhang9135">Chi Zhang</a></h3>
   </footer>
