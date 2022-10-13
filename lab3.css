@@ -1,0 +1,29 @@
+/* This is a css file to add some style for the lab2's html files */
+
+/* Make the background color of the header and footer web to be light blue */
+/* Make the text in dark space gray */
+header {
+    background-color: hsl(200, 100%, 90%);
+    color: rgb(188, 12, 186);
+}
+footer {
+    background-color: lightblue;
+    color: hsl(331, 66%, 44%)
+}
+
+article {
+    background-color: #00fd94;
+    color: #2f76ac;
+}
+
+
+body {
+    /* tiffany green */
+    background-color: rgb(124,238,206);
+}
+
+/* form background color to be yellow */
+form {
+    background-color: rgb(255, 255, 0);
+    color: darkcyan;
+}
