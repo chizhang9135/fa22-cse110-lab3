@@ -5,8 +5,8 @@
 - Name
 
 ## Agenda:
--[ ] Do something
--[ ] Do something else
+- [ ] Do something
+- [ ] Do something else
 
 
 ## Notes:
