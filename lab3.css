@@ -41,8 +41,8 @@ video {
     min-width: 50vw;
     display: block;
     background-color: aqua;
-    padding: 10px 10px 10px 10px;
-    border: #762fac solid 5px;
+    padding: 10pt 10pt 10pt 10pt;
+    border: #762fac solid 1pt;
 }
 
 audio {
@@ -86,10 +86,10 @@ article {
     background-color: #00fd94;
     color: #2f76ac;
     margin: 10px 10px 10px 10px;
-    padding-top: 0.8cm;
-    padding-bottom: 0.8cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
+    padding-top: 0.1in;
+    padding-bottom: 0.1in;
+    padding-left: 0.1in;
+    padding-right: 0.1in;
     border-radius: 5px;
     border-style: dashed;
     border-color: #2f76ac;
