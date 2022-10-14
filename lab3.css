@@ -1,87 +1,6 @@
 /* This is a css file to add some style for the lab2's html files */
 
-/* Make the background color of the header and footer web to be light blue */
-/* Make the text in dark space gray */
-header {
-    background-color: hsl(200, 100%, 90%);
-    color: rgb(188, 12, 186);
-    margin-top: 1cm;
-    margin-bottom: 1cm;
-    margin-right: 5cm;
-    margin-left: 5cm;
-    height: 0.3in;
-    text-align: center;
-}
-
-footer {
-    background-color: lightblue;
-    color: hsl(331, 66%, 44%);
-    margin: auto;
-    height: 0.3in;
-    text-align: center;
-}
-
-nav {
-    display: block;
-    text-align: center;
-}
-
-/* Draw seperate box for the element in the nav with round border and 10px spacing */
-nav a {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: auto;
-    width: 30%;
-    padding: 5px;
-    text-align: center;
-    background-color: #00fd94;
-}
-
-nav a:hover {
-    background-color: teal;
-}
-
-video {
-    margin: auto;
-    max-width: 60vw;
-    max-height: 60vh;
-    min-height: 50vh;
-    min-width: 50vw;
-    display: block;
-    background-color: aqua;
-    padding: 10pt 10pt 10pt 10pt;
-    border: #762fac solid 1pt;
-}
-
-audio {
-    margin: auto;
-    width: 50vw;
-    display: block;
-    background-color: cyan;
-    padding: 10px 10px 10px 10px;
-    border: #762fac solid 5px;
-}
-
-img {
-    max-width: 85vw;
-    min-width: 30vw;
-    max-height: 95vh;
-    min-height: 90vh;
-    margin: auto;
-    display: flex;
-}
-
-/* when video is playing, blink the padding */
-video:playing {
-    animation: blinkpadding 2s linear infinite;
-
-}
-
-audio:playing {
-    animation: blinkpadding 2s linear infinite;
-}
-
+/* Below define animation */
 @keyframes blinkpadding {
     0% {
         background-color: #00fd94;
@@ -96,15 +15,7 @@ audio:playing {
     }
 }
 
-/* make the go tp top always at bottom */
-#keep {
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #fded01;
-}
-
+/* Below define the font for the html elements */
 @font-face {
     font-family: "myfonth1";
     src: url(Pacifico/Pacifico-Regular.ttf);
@@ -113,6 +24,45 @@ audio:playing {
 @font-face {
     font-family: "myfontarticle";
     src: url(Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+
+body {
+    /* tiffany green */
+    background-color: rgb(124, 238, 206);
+}
+
+
+
+header {
+    background-color: hsl(200, 100%, 90%);
+    color: rgb(188, 12, 186);
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+    height: 0.3in;
+    text-align: center;
+}
+
+
+
+nav {
+    display: block;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    background-color: #00fd94;
+}
+nav a:hover {
+    background-color: teal;
 }
 
 h1 {
@@ -126,6 +76,56 @@ h1 {
     font-family: myfonth1;
     animation: blinkpadding 2s linear infinite;
 }
+
+video {
+    margin: auto;
+    max-width: 60vw;
+    max-height: 60vh;
+    min-height: 50vh;
+    min-width: 50vw;
+    display: block;
+    background-color: aqua;
+    padding: 10pt 10pt 10pt 10pt;
+    border: #762fac solid 1pt;
+}
+/* when video is playing, blink the padding */
+video:playing {
+    animation: blinkpadding 2s linear infinite;
+
+}
+
+audio {
+    margin: auto;
+    width: 50vw;
+    display: block;
+    background-color: cyan;
+    padding: 10px 10px 10px 10px;
+    border: #762fac solid 5px;
+}
+/* when video is playing, blink the padding */
+audio:playing {
+    animation: blinkpadding 2s linear infinite;
+}
+
+img {
+    max-width: 85vw;
+    min-width: 30vw;
+    max-height: 95vh;
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+}
+
+
+/* leave the important notes */
+#keep {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fded01;
+}
+
 
 article {
     background-color: #00fd94;
@@ -144,27 +144,10 @@ article {
     width: 29vw;
     font-family: myfontarticle;
 }
-
 article:active {
     background-color: #2f76ac;
     color: #00fd94;
 }
-
-#gototop {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #fded01;
-    border-radius: 5px;
-    border: 1px solid black;
-
-}
-
-#gototop:hover {
-    background-color: #2f76ac;
-    color: #00fd94;
-}
-
 article h2 {
     text-align: center;
     font-size: 5ex;
@@ -176,23 +159,21 @@ article h2 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2in 2in 2in;
+    grid-template-rows: 2in 2in 2in;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    padding: 1px;
     width: auto;
     height: auto;
     justify-content: center;
+    align-items: center;
+    background-color: #6c8d9469;
 }
-
-
-
 .important {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 1;
     background-color: #2f76ac;
     color: #ffffff;
     border: 1px solid black;
@@ -202,52 +183,48 @@ article h2 {
     font-family: myfonth1;
     animation: blinkpadding 2s linear infinite;
 }
-
 .grid-item {
     background-color: #2f76ac;
     color: #00fd94;
     border: 1px solid black;
     align-items: center;
     text-align: center;
+    place-self: center;
+    
 
     width: 50%;
     height: 0;
     padding-bottom: 50%;
-    font-size: 30px;
+    font-size: 85px;
 }
-
 .grid-item:hover {
     background-color: #7ba5c4;
     color: #00fd94;
     border: 1px solid black;
 }
-
 .grid-item:active {
     background-color: #00fd94;
     color: #2f76ac;
     border: 1px;
 }
 
+
+/* for another grid */
 .item1 {
     grid-area: CSE;
 }
-
 .item2 {
     grid-area: CS;
 }
-
 .item3 {
     grid-area: CE;
 }
-
 .item4 {
     grid-area: CSE110;
 }
-
 .item5 {
     grid-area: CSE140;
 }
-
 .grid-containerarea {
     display: grid;
     grid-template-areas:
@@ -258,7 +235,6 @@ article h2 {
     background-color: #2196F3;
     padding: 10px;
 }
-
 .grid-containerarea div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -267,10 +243,7 @@ article h2 {
 }
 
 
-body {
-    /* tiffany green */
-    background-color: rgb(124, 238, 206);
-}
+
 
 
 
@@ -284,19 +257,39 @@ body {
     border-radius: 15px;
     margin: auto 25vw auto 25vw;
 }
-
 #signup:hover {
     background-color: #00fd94;
     color: #762fac;
 }
-
 #comments {
     position: relative;
     left: 13ch;
 }
-
 #commentsID {
     position: relative;
     left: 10ch;
     right: 10ch;
+}
+
+/* make the go tp top always at bottom */
+#gototop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fded01;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+#gototop:hover {
+    background-color: #2f76ac;
+    color: #00fd94;
+}
+
+footer {
+    background-color: lightblue;
+    color: hsl(331, 66%, 44%);
+    margin: auto;
+    height: 0.3in;
+    text-align: center;
 }
