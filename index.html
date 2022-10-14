@@ -16,8 +16,8 @@
   <header>This is only for group member</header>
   <hr>
   <nav id="nav">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
+    <a href="index.html">Home</a> 
+    <a href="about.html">About</a> 
     <a href="contact.html">Contact</a>
   </nav>
   <hr>
@@ -25,7 +25,7 @@
   <main>
     <h1>Meeting Minutes</h1>
     <h2>Please do the following</h2>
-    <ol>
+    <ol id="keep">
       <li>Read the web carefully</li>
       <li><a href="#fillForm">register </a>below</li>
       <li>Go to <a href="https://canvas.ucsd.edu">canvas</a></li>
@@ -48,6 +48,20 @@
       <p>Second Article Content.
         1234567890zyxwvutsrqponmlkjihgfedcba
       <p>Second Article Content</p>
+    </article>
+
+    <article>
+      <h2>Third Article</h2>
+      <p>Third Article Content.
+        1234567890zyxwvutsrqponmlkjihgfedcba
+      <p>Third Article Content</p>
+    </article>
+
+    <article>
+      <h2>Fourth Article</h2>
+      <p>Fourth Article Content.
+        1234567890zyxwvutsrqponmlkjihgfedcba
+      <p>Fourth Article Content</p>
     </article>
 
 
@@ -161,7 +175,7 @@
 
       <br>
 
-
+  
 
       <form action="success.html" id="fillForm">
         <fieldset>
@@ -213,7 +227,7 @@
             <option value="Marshall"></option>
           </datalist>
 
-          <label for="comments">Comments:</label>
+          <label for="comments" id="commentsID">Comments:</label>
           <textarea name="comments" id="comments" cols="30" rows="10">comments:</textarea><br><br>
           <p>you will be redirected after submit</p>
           <input type="checkbox" name="user-agreement" value="agree"> I agree to the terms and conditions<br><br>
@@ -221,7 +235,7 @@
           
         </fieldset>
       </form>
-      <h3><a href="#nav">Go to top</a></h3>
+      <h3 id="gototop"><a href="#nav">Go to top</a></h3>
   </main>
   <hr>
   <footer>Writen by Chi Zhang

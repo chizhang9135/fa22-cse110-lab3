@@ -5,25 +5,150 @@
 header {
     background-color: hsl(200, 100%, 90%);
     color: rgb(188, 12, 186);
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+    height: 0.3in;
+    text-align: center;
 }
 footer {
     background-color: lightblue;
-    color: hsl(331, 66%, 44%)
+    color: hsl(331, 66%, 44%);
+    margin: auto;
+    height: 0.3in;
+    text-align: center;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+/* Draw seperate box for the element in the nav with round border and 10px spacing */
+nav a {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    background-color: #00fd94;
+}
+
+video {
+    margin: auto;
+    max-width: 60vw;
+    max-height: 60vh;
+    min-height: 50vh;
+    min-width: 50vw;
+    display: block;
+    background-color: aqua;
+    padding: 10pt 10pt 10pt 10pt;
+    border: #762fac solid 1pt;
+}
+
+audio {
+    margin: auto;
+    width: 50vw;
+    display: block;
+    background-color: cyan;
+    padding: 10px 10px 10px 10px;
+    border: #762fac solid 5px;
+}
+
+img {
+    max-width: 85vw;
+    min-width: 30vw;
+    max-height: 95vh;
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+}
+
+/* make the go tp top always at bottom */
+#keep {
+    position:sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fded01;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10ch;
+    color: #2f76ac;
+    background-color: #00fd94;
+    padding-top:1.5rem;
+    padding-bottom: 0.2em;
+    text-decoration: underline overline;
 }
 
 article {
     background-color: #00fd94;
     color: #2f76ac;
+    margin: 10px 10px 10px 10px;
+    padding-top: 0.1in;
+    padding-bottom: 0.1in;
+    padding-left: 0.1in;
+    padding-right: 0.1in;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: #2f76ac;
+    border-width: 0.5pc;
+    /* auto scale when resizing the window */
+    display: inline-table;
+}
+
+#gototop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fded01;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+article h2 {
+    text-align: center;
+    font-size: 5ex;
+    color: #762fac;
+    background-color: #00fd94;
+    padding: auto;
+    text-decoration: underline;
 }
 
 
 body {
     /* tiffany green */
     background-color: rgb(124,238,206);
+
 }
 
+
+
 /* form background color to be yellow */
-form {
+#fillForm {
     background-color: rgb(255, 255, 0);
     color: darkcyan;
+    max-width: 50vw;
+    min-width: 50vw;
+    border: #00fd94 0.5pc solid;
+    border-radius: 15px;
+    margin: auto 25vw auto 25vw;
 }
+
+#comments {
+    position:relative;
+    left: 13ch;
+}
+
+#commentsID {
+    position:relative;
+    left: 10ch;
+    right: 10ch;
+}
+
