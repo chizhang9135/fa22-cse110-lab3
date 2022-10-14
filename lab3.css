@@ -9,11 +9,15 @@ header {
     margin-bottom: 1cm;
     margin-right: 5cm;
     margin-left: 5cm;
+    height: 0.3in;
+    text-align: center;
 }
 footer {
     background-color: lightblue;
     color: hsl(331, 66%, 44%);
     margin: auto;
+    height: 0.3in;
+    text-align: center;
 }
 
 nav {
@@ -102,6 +106,10 @@ article {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background-color: #fded01;
+    border-radius: 5px;
+    border: 1px solid black;
+
 }
 
 article h2 {
