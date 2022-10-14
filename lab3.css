@@ -118,12 +118,13 @@ audio:playing {
 h1 {
     text-align: center;
     font-size: 10ch;
-    color: #2f76ac;
+    color: #ffffff;
     background-color: #00fd94;
     padding-top: 1.5rem;
     padding-bottom: 0.2em;
     text-decoration: underline overline;
     font-family: myfonth1;
+    animation: blinkpadding 2s linear infinite;
 }
 
 article {
