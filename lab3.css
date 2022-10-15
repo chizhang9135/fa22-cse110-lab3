@@ -25,15 +25,7 @@
     font-family: "myfontarticle";
     src: url(Indie_Flower/IndieFlower-Regular.ttf);
 }
-@media screen and (max-width: 400px) { 
-    body { background-color: #f09a9da0; } 
-} 
-@media screen and (min-width: 401px) and (max-width: 960px) { 
-    body { background-color: #f5cf8eaa; } 
-} 
-@media screen and (min-width: 961px) { 
-    body { background-color: rgb(124, 238, 206); } 
-}
+
 
 
 
@@ -377,4 +369,46 @@ footer {
     margin: auto;
     height: 0.3in;
     text-align: center;
+}
+
+@media screen and (max-width: 400px) { 
+    * {
+        animation: none !important;
+        color: #000000;
+        background-color: #ffffff;
+        padding: auto !important;
+        margin: auto auto auto auto !important;
+        border: none !important;
+        border-radius: none !important;
+        font-size: auto !important;
+        background-color: #ffffff;
+        width: auto !important;
+        height: auto !important;
+        border-color: #ffffff !important;
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+} 
+
+/* disable effect */
+@media screen and (min-width: 401px) and (max-width: 960px) { 
+    * {
+        animation: none !important;
+        color: #000000;
+        background-color: #ffffff;
+        padding: auto !important;
+        margin: auto !important;
+        border: none !important;
+        border-radius: none !important;
+        font-size: auto !important;
+        background-color: #ffffff;
+        width: auto !important;
+        height: auto !important;
+        border-color: #ffffff !important;
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+} 
+@media screen and (min-width: 961px) { 
+    body { background-color: rgb(124, 238, 206); } 
 }
