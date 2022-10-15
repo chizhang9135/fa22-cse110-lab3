@@ -1,7 +1,45 @@
 /* This is a css file to add some style for the lab2's html files */
 
-/* Make the background color of the header and footer web to be light blue */
-/* Make the text in dark space gray */
+/* Below define animation */
+@keyframes blinkpadding {
+    0% {
+        background-color: #00fd94;
+    }
+
+    50% {
+        background-color: #2f76ac;
+    }
+
+    100% {
+        background-color: #00fd94;
+    }
+}
+
+/* Below define the font for the html elements */
+@font-face {
+    font-family: "myfonth1";
+    src: url(Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "myfontarticle";
+    src: url(Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+
+
+
+body {
+    /* tiffany green */
+    background-color: rgb(124, 238, 206);
+}
+
+
+    
+
+
+
+
 header {
     background-color: hsl(200, 100%, 90%);
     color: rgb(188, 12, 186);
@@ -9,23 +47,16 @@ header {
     margin-bottom: 1cm;
     margin-right: 5cm;
     margin-left: 5cm;
-    height: 0.3in;
+    height: auto;
     text-align: center;
 }
-footer {
-    background-color: lightblue;
-    color: hsl(331, 66%, 44%);
-    margin: auto;
-    height: 0.3in;
-    text-align: center;
-}
+
+
 
 nav {
     display: block;
     text-align: center;
 }
-
-/* Draw seperate box for the element in the nav with round border and 10px spacing */
 nav a {
     display: inline-block;
     border: 1px solid black;
@@ -35,6 +66,21 @@ nav a {
     padding: 5px;
     text-align: center;
     background-color: #00fd94;
+}
+nav a:hover {
+    background-color: teal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10ch;
+    color: #ffffff;
+    background-color: #00fd94;
+    padding-top: 1.5rem;
+    padding-bottom: 0.2em;
+    text-decoration: underline overline;
+    font-family: myfonth1;
+    animation: blinkpadding 2s linear infinite;
 }
 
 video {
@@ -48,6 +94,11 @@ video {
     padding: 10pt 10pt 10pt 10pt;
     border: #762fac solid 1pt;
 }
+/* when video is playing, blink the padding */
+video:playing {
+    animation: blinkpadding 2s linear infinite;
+
+}
 
 audio {
     margin: auto;
@@ -56,6 +107,10 @@ audio {
     background-color: cyan;
     padding: 10px 10px 10px 10px;
     border: #762fac solid 5px;
+}
+/* when video is playing, blink the padding */
+audio:playing {
+    animation: blinkpadding 2s linear infinite;
 }
 
 img {
@@ -67,24 +122,16 @@ img {
     display: flex;
 }
 
-/* make the go tp top always at bottom */
+
+/* leave the important notes */
 #keep {
-    position:sticky;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
     background-color: #fded01;
 }
 
-h1 {
-    text-align: center;
-    font-size: 10ch;
-    color: #2f76ac;
-    background-color: #00fd94;
-    padding-top:1.5rem;
-    padding-bottom: 0.2em;
-    text-decoration: underline overline;
-}
 
 article {
     background-color: #00fd94;
@@ -100,34 +147,182 @@ article {
     border-width: 0.5pc;
     /* auto scale when resizing the window */
     display: inline-table;
+    width: 29vw;
+    font-family: myfontarticle;
 }
-
-#gototop {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #fded01;
-    border-radius: 5px;
-    border: 1px solid black;
-
+article:active {
+    background-color: #2f76ac;
+    color: #00fd94;
 }
-
 article h2 {
     text-align: center;
     font-size: 5ex;
     color: #762fac;
-    background-color: #00fd94;
     padding: auto;
     text-decoration: underline;
 }
 
 
-body {
-    /* tiffany green */
-    background-color: rgb(124,238,206);
-
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c8d9469;
+}
+.important {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    font-family: myfontarticle;
+    background-color: #2f76ac;
+    color: #ffffff;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    font-size: 5ex;
+    animation: blinkpadding 2s linear infinite;
+}
+.grid-item {
+    background-color: #2f76ac;
+    color: #00fd94;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    place-self: center;
+    
+    width: 1in;
+    height: 1in;
+    font-size: 3em;
+    font-family: myfonth1;
+}
+.grid-item:hover {
+    background-color: #7ba5c4;
+    color: #00fd94;
+    border: 1px solid black;
+    font-size: 7em;
+    width: 1.5in;
+    height: 1.5in;
+    font-size: 4.5em;
+    font-family: myfonth1;
+}
+.grid-item:active {
+    background-color: #00fd94;
+    color: #2f76ac;
+    border: 1px;
 }
 
+
+/* for another grid */
+.item1 {
+    grid-area: CSE;
+}
+.item2 {
+    grid-area: CS;
+}
+.item3 {
+    grid-area: CE;
+}
+.item4 {
+    grid-area: CSE110;
+}
+.item5 {
+    grid-area: CSE140;
+}
+.grid-containerarea {
+    display: grid;
+    grid-template-areas:
+        'CSE CSE CSE'
+        'CS CS CSE110'
+        'CE CE CSE140';
+    grid-gap: 40px 20px;
+    background-color: #2196F3;
+    padding: 10px;
+    padding-top: 3ch;
+}
+.grid-containerarea div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-containerarea div:active {
+    animation: blinkpadding 2s linear infinite;
+    color: rgb(255, 255, 255);
+}
+.grid-containerarea div:hover {
+    background-color: #00fd94;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 5px;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    justify-self: center;
+    background-color: #6c8d9469;
+}
+
+.flex-item {
+    background-color: #2f76ac;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    place-self: center;
+    font-size: 4.5ex;
+    height: 1in;
+    width: 1in;
+    order: 2;
+}
+
+.flex-important {
+    background-color: #2f76ac;
+    width: 12vw;
+    height: auto;
+    flex-grow:5;
+    font-family: myfontarticle;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.7em;
+    animation: blinkpadding 2s linear infinite;
+    order: 0;
+}
+
+.later {
+    background-color: #2f76ac;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    place-self: center;
+    font-size: 4.5ex;
+    height: 1in;
+    width: 1in;
+    order: 3;
+    flex-shrink: 3;
+}
+
+.flex-item:hover {
+    background-color: #7ba5c4;
+    color: #00fd94;
+    border: 1px solid black;
+    height: 1.5in;
+    width: 1.5in;
+    font-size: 6.5ex;
+}
 
 
 /* form background color to be yellow */
@@ -140,15 +335,80 @@ body {
     border-radius: 15px;
     margin: auto 25vw auto 25vw;
 }
-
+#signup:hover {
+    background-color: #00fd94;
+    color: #762fac;
+}
 #comments {
-    position:relative;
-    left: 13ch;
+    position: relative;
+    left: 1cm;
 }
-
 #commentsID {
-    position:relative;
-    left: 10ch;
-    right: 10ch;
+    position: relative;
+    left: 1cm;
 }
 
+/* make the go tp top always at bottom */
+#gototop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fded01;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+#gototop:hover {
+    background-color: #2f76ac;
+    color: #00fd94;
+}
+
+footer {
+    background-color: lightblue;
+    color: hsl(331, 66%, 44%);
+    margin: auto;
+    height: 0.3in;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) { 
+    * {
+        animation: none !important;
+        color: #000000;
+        background-color: #ffffff;
+        padding: auto !important;
+        margin: auto auto auto auto !important;
+        border: none !important;
+        border-radius: none !important;
+        font-size: auto !important;
+        background-color: #ffffff;
+        width: auto !important;
+        height: auto !important;
+        border-color: #ffffff !important;
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+} 
+
+/* disable effect */
+@media screen and (min-width: 401px) and (max-width: 960px) { 
+    * {
+        animation: none !important;
+        color: #000000;
+        background-color: #ffffff;
+        padding: auto !important;
+        margin: auto !important;
+        border: none !important;
+        border-radius: none !important;
+        font-size: auto !important;
+        background-color: #ffffff;
+        width: auto !important;
+        height: auto !important;
+        border-color: #ffffff !important;
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+} 
+@media screen and (min-width: 961px) { 
+    body { background-color: rgb(124, 238, 206); } 
+}
