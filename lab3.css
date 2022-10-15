@@ -159,8 +159,8 @@ article h2 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2in 2in 2in;
-    grid-template-rows: 2in 2in 2in;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     width: auto;
@@ -174,13 +174,13 @@ article h2 {
     grid-column-end: 4;
     grid-row-start: 0;
     grid-row-end: 1;
+    font-family: myfontarticle;
     background-color: #2f76ac;
     color: #ffffff;
     border: 1px solid black;
     align-items: center;
     text-align: center;
     font-size: 5ex;
-    font-family: myfonth1;
     animation: blinkpadding 2s linear infinite;
 }
 .grid-item {
@@ -191,16 +191,20 @@ article h2 {
     text-align: center;
     place-self: center;
     
-
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
-    font-size: 85px;
+    width: 1in;
+    height: 1in;
+    font-size: 3em;
+    font-family: myfonth1;
 }
 .grid-item:hover {
     background-color: #7ba5c4;
     color: #00fd94;
     border: 1px solid black;
+    font-size: 7em;
+    width: 1.5in;
+    height: 1.5in;
+    font-size: 4.5em;
+    font-family: myfonth1;
 }
 .grid-item:active {
     background-color: #00fd94;
@@ -231,9 +235,10 @@ article h2 {
         'CSE CSE CSE'
         'CS CS CSE110'
         'CE CE CSE140';
-    grid-gap: 10px;
+    grid-gap: 40px 20px;
     background-color: #2196F3;
     padding: 10px;
+    padding-top: 3ch;
 }
 .grid-containerarea div {
     background-color: rgba(255, 255, 255, 0.8);
@@ -241,10 +246,77 @@ article h2 {
     padding: 20px 0;
     font-size: 30px;
 }
+.grid-containerarea div:active {
+    animation: blinkpadding 2s linear infinite;
+    color: rgb(255, 255, 255);
+}
+.grid-containerarea div:hover {
+    background-color: #00fd94;
+}
 
 
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 5px;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    justify-self: center;
+    background-color: #6c8d9469;
+}
 
+.flex-item {
+    background-color: #2f76ac;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    place-self: center;
+    font-size: 4.5ex;
+    height: 1in;
+    width: 1in;
+    order: 2;
+}
+
+.flex-important {
+    background-color: #2f76ac;
+    width: 12vw;
+    height: auto;
+    flex-grow:5;
+    font-family: myfontarticle;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.7em;
+    animation: blinkpadding 2s linear infinite;
+    order: 0;
+}
+
+.later {
+    background-color: #2f76ac;
+    color: #00fd94;
+    border: 1px solid black;
+    text-align: center;
+    place-self: center;
+    font-size: 4.5ex;
+    height: 1in;
+    width: 1in;
+    order: 3;
+    flex-shrink: 3;
+}
+
+.flex-item:hover {
+    background-color: #7ba5c4;
+    color: #00fd94;
+    border: 1px solid black;
+    height: 1.5in;
+    width: 1.5in;
+    font-size: 6.5ex;
+}
 
 
 /* form background color to be yellow */
