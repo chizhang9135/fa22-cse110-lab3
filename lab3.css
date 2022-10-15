@@ -25,12 +25,26 @@
     font-family: "myfontarticle";
     src: url(Indie_Flower/IndieFlower-Regular.ttf);
 }
+@media only screen and (max-width: 400px) { 
+    body { background-color: #f09a9da0; } 
+} 
+@media only screen and (min-width: 401px) and (max-width: 960px) { 
+    body { background-color: #f5cf8eaa; } 
+} 
+@media only screen and (min-width: 961px) { 
+    body { background-color: rgb(124, 238, 206); } 
+}
+
 
 
 body {
     /* tiffany green */
     background-color: rgb(124, 238, 206);
 }
+
+
+    
+
 
 
 
@@ -335,12 +349,11 @@ article h2 {
 }
 #comments {
     position: relative;
-    left: 13ch;
+    left: 1cm;
 }
 #commentsID {
     position: relative;
-    left: 10ch;
-    right: 10ch;
+    left: 1cm;
 }
 
 /* make the go tp top always at bottom */
