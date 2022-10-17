@@ -514,7 +514,7 @@ input[type=date]:hover {
     cursor: pointer;
 }
 
-input[type=password]:hover {
+[type=password]:hover {
     background-color: #c2b0c5;
     color: #fd0000;
     border: #00fd94 0.5px solid;
